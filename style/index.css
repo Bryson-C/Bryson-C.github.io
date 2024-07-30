@@ -1,0 +1,47 @@
+body {
+	background-color: rgb(45,45,45) !important;
+	color: #ececec;
+}
+
+hr {
+	color: white;
+	width: 90%;
+}
+
+.title-text {
+	font-size: 3rem;
+	text-align: center;
+	color: #dedede;
+}
+
+.sub-title-text {
+	font-size: 2rem;
+	text-align: center;
+	color: #bebebe;
+}
+
+
+#blog-list {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.blog-item {
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+.blog-link {
+	margin: 20px auto 20px auto;
+	text-align: center;
+	font-size: 1.2rem;
+	color: mediumpurple;
+}
+.blog-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.blog-data {
+	color: #bebebe;
+	font-size: 1rem;
+}
