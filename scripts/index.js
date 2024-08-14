@@ -1,10 +1,21 @@
 
 const subHeaderTexts = [
-    "If you behave, maybe you can have an intellectual article",
-    "Imagine if I created anything but slop",
-    "Java devs wouldn't understand, nor do I expect them to",
+    "If You Behave, Maybe You Can Have An Intellectual Article",
+    "Imagine If I Created Anything But Slop",
+    "Java Devs Wouldn't Understand, Nor Do I Expect Them To",
     "😔",
-    "Local man, global hater"
+    "Local Man, Global Hater",
+    "Do Your Country A Favor: Report Those Commies!",
+    "Trust Me Bro, You Just Have To Get Past The First 30 Episodes",
+    "Society Was Caught With It's Pants Down: Now Billions Must Pay The Price 😔",
+    "Added 50% More Gender Fluid (Up To Interpretation)",
+    "The Giant Enemy Spider!",
+    "Still Better Than Buzzfeeed",
+    "The Middle East Needs To Be Put In The Timeout Corner",
+    "10 Dead, Suspect: Javascript Framework Creators",
+    "This Just In: Political Thing In Political Place!",
+    "Nothing Can Prepare You For The \"World War II Kids\" Useless Knowledge",
+    "In This House We Measure In Anything But Metric! Now Go To Your Room!",
 ]
 
 function getRandomSubHeaderText() {
@@ -14,21 +25,11 @@ function getRandomSubHeaderText() {
 // This Is Defered, This Shouldn't Fail As The Document Is Always Loaded Before The Script
 document.getElementById("sub-title").innerHTML = getRandomSubHeaderText()
 
-/*
-for (let elm of document.getElementsByClassName("blog-link")) {
-    elm.addEventListener("mouseout", function() {
-        let blog_tags = this.parentNode.getElementsByClassName("blog-tag-list")[0].children;
-        for (let tag of blog_tags) {
-            //tag.style.display = "none";
-            tag.style.opacity = 0;
-        }
-    });
-    elm.addEventListener("mouseover", function() {
-        let blog_tags = this.parentNode.getElementsByClassName("blog-tag-list")[0].children;
-        for (let tag of blog_tags) {
-            //tag.style.display = "inline";
-            tag.style.opacity = 1;
-        }
-    });
+function addTags(element, strings, color) {
+    for (let i = 0; i < strings.length; i++) {
+        let childTag = document.createElement('li');
+        childTag.innerHTML = strings[i];
+        childTag.classList = ['blog-tag', `blog-tag-${color[i]}`];
+        element.appendChild(childTag);
+    }
 }
-*/

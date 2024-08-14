@@ -83,3 +83,8 @@ hr {
 	border-color: #ffff54;
 	background-color: #ffff54;
 }
+.blog-tag-green {
+	color: #2d2d2d;
+	border-color: mediumspringgreen;
+	background-color: mediumspringgreen;
+}
