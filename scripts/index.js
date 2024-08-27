@@ -16,6 +16,13 @@ const subHeaderTexts = [
     "This Just In: Political Thing In Political Place!",
     "Nothing Can Prepare You For The \"World War II Kids\" Useless Knowledge",
     "In This House We Measure In Anything But Metric! Now Go To Your Room!",
+    "Dependancy Hell Is Just Normal Hell But You're Behind A Computer",
+    "Are We Stupid, Or Did Society Crumble?",
+    "AI Bros Couldn't Conceive The Idea Of Rational Thought",
+    "Freewill? More Like Dismiss William",
+    "Mods, Launch This Guy To Orbit",
+    "700+ Dependencies Node/Cargo (And Counting!!!)",
+    "I Should Have Read My Textbooks Instead Of Ranting About AI!"
 ]
 
 function getRandomSubHeaderText() {
