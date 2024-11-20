@@ -33,6 +33,13 @@ body {
     width: 512px;
     height: 512px;
 }
+.blog-vid {
+    display: block;
+    margin: auto;
+    align-content: center;
+    width: 512px;
+    aspect-ratio: 16/9;
+}
 
 ul li {
     margin: 10px auto;
@@ -40,4 +47,31 @@ ul li {
 
 #back-button {
     color: white;
+}
+
+.blog-2person-dialog :nth-child(odd) {
+    list-style: "A:   ";
+}
+.blog-2person-dialog :nth-child(even) {
+    list-style: "B:   ";
+}
+.blog-dialog-no-deco {
+    list-style: disc !important;
+}
+
+.blog-jump-navbar {
+    display: grid;
+    gap: 1rem;
+}
+.blog-jump-navbar * {
+    border: black solid 1px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #2d2d2d;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.blog-jump-navbar *:hover {
+    color: mediumpurple;
 }
