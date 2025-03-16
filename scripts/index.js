@@ -71,6 +71,8 @@ const imageSources = [
     ["blogs/Img/ReaderSpotted.png","blogs/Img/CommieBook.png"],
     ["blogs/Img/ShutMouth.jpg","blogs/Img/Application.png","blogs/Img/FakeJobExposed.png"],
     ["blogs/Img/AITypist.png","blogs/Img/ConspiracyTheorist.png","blogs/Img/FuckYouImTheMainCharacter.png"],
+    [],
+    []
 ];
 
 function setSwapingImages(id, imageArrayIndex) {
@@ -92,6 +94,8 @@ setSwapingImages("blog-post-4", 3);
 setSwapingImages("blog-post-5", 4);
 setSwapingImages("blog-post-6", 5);
 setSwapingImages("blog-post-7", 6);
+setSwapingImages("blog-post-8", 7);
+setSwapingImages("blog-post-9", 8);
 
 
 
