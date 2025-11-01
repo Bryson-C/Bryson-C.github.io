@@ -1,0 +1,27 @@
+#file-preview {
+	padding: 1rem;
+	border-left: 1px solid var(--page-white-color);
+}
+#preview-header-name {
+	font-size: 16pt;
+}
+#file-preview {
+	padding: 1rem;
+}
+.file-preview-display-norm {
+	display: inline;
+}
+.file-preview-display-grid {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.preview-item {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: min-content;
+	align-self: center;
+	color: var(--page-white-color);
+}
+

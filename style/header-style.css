@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.color-scheme-sample { width: 16px; aspect-ratio: 4/3;}
+
+#color-scheme {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#page-header {
+	width: max-content;
+	padding-right: 50px;
+	margin: 1rem 2rem auto;
+}
+
+#header-command-line-emulator, #header-content {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+}
+#header-command-line-emulator {
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+	max-height: 5rem;
+	height: 5rem;
+	scrollbar-gutter: none;
+}
+
+#header-content {
+	width: 100%;
+	height: 80%;
+}
+
+#orbital-clock-content-container {
+	display: flex;
+	flex-direction: row;
+}
+
+body {
+	background-image: url("../img/galaxy-background.jpg");
+	background-size: 150%;
+	background-position: 0px -200px;
+}
+
+#orbital-clock {
+	aspect-ratio: 1/1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	min-width: 250px;
+}
+#orbital-clock img {
+	position: absolute;
+	aspect-ratio: 1/1;
+	display: flex;
+	align-self: center;
+}
+#orbital-clock :nth-child(1) {
+	width: 200px;
+	transform: rotate(-90deg);
+}
+#orbital-clock :nth-child(2) {
+	width: 180px;
+	transform: rotate(-90deg);
+}
+#orbital-clock :nth-child(3) {
+	width: 160px;
+	transform: rotate(-90deg);
+}
+#orbital-icon {
+	width: 220px;
+	z-index: -1;
+}
+
+@keyframes blinking-cursor-animation {
+	0% { opacity: 0%; }
+	50% { opacity: 100%; }
+	100% { opacity: 0%; }
+}
+
+.blinking-cursor {
+	animation: blinking-cursor-animation 0.5s linear infinite;
+}

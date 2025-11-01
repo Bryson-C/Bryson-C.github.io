@@ -1,0 +1,48 @@
+:root {
+	--page-header-tcolor: #E6E7E8;
+	--page-white-color: #E6E7E8;
+	/* "Monokai Pro Machine" From https://gogh-co.github.io/Gogh/ */
+	--page-red-color: #FF6D7E;	
+	--page-green-color: #A2E57B;	
+	--page-yellow-color: #FFED72;	
+	--page-orange-color: #FFB270;
+	--page-purple-color: #BAA0F8;
+	--page-blue-color: #7CD5F1;
+	--page-black-color: #2D2A2E;
+}
+
+.col-red { color: var(--page-red-color); }
+.col-green { color: var(--page-green-color); }
+.col-yellow { color: var(--page-yellow-color); }
+.col-orange { color: var(--page-orange-color); }
+.col-purple { color: var(--page-purple-color); }
+.col-blue { color: var(--page-blue-color); }
+.col-white { color: var(--page-header-tcolor); }
+.col-black { color: var(--page-black-color); }
+
+.bg-col-red { background-color: var(--page-red-color); }
+.bg-col-green { background-color: var(--page-green-color); }
+.bg-col-yellow { background-color: var(--page-yellow-color); }
+.bg-col-orange { background-color: var(--page-orange-color); }
+.bg-col-purple { background-color: var(--page-purple-color); }
+.bg-col-blue { background-color: var(--page-blue-color); }
+.bg-col-white { background-color: var(--page-header-tcolor); }
+.bg-col-black { background-color: var(--page-black-color); }
+
+.window {
+	display: grid;
+	background-color: rgba(0, 0, 0, 0.60);
+	backdrop-filter: blur(2px);
+	border: var(--page-white-color) solid 1px;
+	color: var(--page-white-color);
+	font-size: 14pt;
+	
+	font-family: "Ubuntu Mono", monospace;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+
+.centered-text {
+	text-align: center;
+}

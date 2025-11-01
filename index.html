@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/general.css">
+	<link rel="stylesheet" href="style/header-style.css">
+	<link rel="stylesheet" href="style/file-explorer.css">
+	<link rel="stylesheet" href="style/file-preview.css">
+</head>
+
+<script src="script/header-helpers.js" defer></script>
+<script src="script/file-preview-helper.js" defer></script>
+<script src="script/orbital-clock.js" defer></script>
+
+<body>
+	<header class="window" id="page-header">
+		<div id="orbital-clock-content-container">
+			<div id="orbital-clock">
+				<img id="hours" src="img/circle-with-dot-white.svg">
+				<img id="minutes" src="img/circle-with-dot-white.svg">
+				<img id="seconds" src="img/circle-with-dot-white.svg">
+				<img id="orbital-icon" src="img/UntitledBW.png">
+			</div>
+			<section id="header-content">
+				<span class="col-green">bcrader@portfolio</span> <br>
+				<span>=================</span> <br>
+				
+				<span class="col-green">{Languages}: </span><span class="col-blue">C/C++, Java</span><br>
+				<span class="col-green">{Libraries}: </span><span class="col-blue">SDL2/3, Vulkan</span><br>
+				<span class="col-green">{Tools}: </span><span class="col-blue">Adobe Suite, Jetbrains</span><br>
+				<br>
+				<div id="color-scheme"></div>
+			</section>
+		</div>
+		<section id="header-command-line-emulator">
+			<span class="col-green">bcrader@portfolio</span>
+			<span class="col-blue">~/dev/main $ </span>
+			<span class='blinking-cursor'>|</span>
+		</section>
+	</header>
+
+
+	<main class="window" id="main-content-explorer">
+		<div id="file-explorer">
+			<ul id="file-list">
+				<li class="file-explorer-file"> 
+					<img src="img/simple-text-file.svg" width="64px" onclick="loadMainPreview();">
+					<br>
+					<span> Main </span>
+				</li>
+				<li class="file-explorer-file"> 
+					<img src="img/simple-file.svg" width="64px" onclick="loadProjectsPreview()">
+					<br>
+					<div> Projects </div>
+				</li>
+				<li class="file-explorer-file"> 
+					<img src="img/simple-file.svg" width="64px" onclick="loadBlogPreview();">
+					<br>
+					<span> Blog </span>
+				</li>
+				<li class="file-explorer-file"> 
+					<img src="img/simple-file.svg" width="64px" onclick="loadOtherPreview();">
+					<br>
+					<div> Other </div>
+				</li>
+			</ul>
+			<div class="file-preview-display-norm" id="file-preview">
+				<p style="text-align: center;" id="preview-header-name"> </p>
+				<article id="preview-file-contents">
+					
+				</article>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>
