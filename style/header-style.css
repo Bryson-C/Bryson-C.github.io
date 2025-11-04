@@ -42,8 +42,8 @@
 
 body {
 	background-image: url("../img/galaxy-background.jpg");
-	background-size: 150%;
-	background-position: 0px -200px;
+	background-size: 75%;
+	background-repeat: round;
 }
 
 #orbital-clock {
@@ -84,4 +84,5 @@ body {
 
 .blinking-cursor {
 	animation: blinking-cursor-animation 0.5s linear infinite;
+
 }
